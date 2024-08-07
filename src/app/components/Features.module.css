@@ -1,0 +1,73 @@
+.features {
+    padding: 100px 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.sectionTitle {
+    font-size: 32px;
+    color: #b2b2b2;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    cursor: pointer;
+}
+
+.block {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0px;
+    width: 280px;
+    height: 320px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 40px;
+}
+
+.block:hover {
+    transform: translateY(-20px);
+}
+
+.icon {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    max-width: 80%;
+    margin: auto;
+}
+
+.aboutUsSection {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.aboutUsSection h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.aboutUsSection p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
