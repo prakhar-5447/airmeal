@@ -13,7 +13,7 @@ export default function VideoSection() {
           autoPlay
           loop
           muted
-          src="/assets/drone.mp4"
+          src="/airmeal/assets/drone.mp4"
         >
           Your browser does not support the video tag.
         </video>
