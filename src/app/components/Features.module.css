@@ -1,22 +1,24 @@
 .features {
-    padding: 100px 20px;
+    padding: 40px 30px;
     text-align: center;
     margin: auto;
 }
 
 .sectionTitle {
-    font-size: 32px;
+    font-size: 24px;
     color: #b2b2b2;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .blocks {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    column-gap: 20px;
     cursor: pointer;
+    flex-wrap: wrap;
+    padding: 0px 30px;
 }
 
 .block {
@@ -24,11 +26,11 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px 0px;
-    width: 280px;
-    height: 320px;
+    width: 200px;
+    height: 220px;
     text-align: center;
     transition: transform 0.3s;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .block:hover {
@@ -36,18 +38,18 @@
 }
 
 .icon {
-    font-size: 72px;
-    margin-bottom: 20px;
+    font-size: 46px;
+    margin-bottom: 14px;
 }
 
 .title {
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 10px;
     color: #333;
 }
 
 .description {
-    font-size: 14px;
+    font-size: 10px;
     color: #666;
     max-width: 80%;
     margin: auto;
@@ -59,15 +61,75 @@
     text-align: center;
 }
 
-.aboutUsSection h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #333333;
-}
-
 .aboutUsSection p {
-    font-size: 18px;
+    font-size: 14px;
     color: #666666;
     margin-bottom: 20px;
     line-height: 1.6;
+}
+
+@media only screen and (min-width: 768px) {
+    .sectionTitle {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .blocks {
+        column-gap: 40px;
+    }
+
+    .block {
+        width: 250px;
+        height: 270px;
+        margin-bottom: 40px;
+    }
+
+    .icon {
+        font-size: 54px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .aboutUsSection p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .sectionTitle {
+        font-size: 32px;
+    }
+
+
+    .blocks {
+        column-gap: 80px;
+    }
+
+    .block {
+        width: 280px;
+        height: 300px;
+    }
+
+    .features {
+        padding: 100px 0px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .aboutUsSection p {
+        font-size: 18px;
+    }
 }

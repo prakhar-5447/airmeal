@@ -1,18 +1,20 @@
 .footer {
     background-color: #0070f3;
     color: #ffffff;
-    padding-top: 140px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
+    row-gap: 0px;
 }
+
 
 .column {
     flex: 1;
@@ -21,23 +23,21 @@
 }
 
 .column h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #ffffff;
 }
 
 .column p,
 .column ul,
 .column ul li {
-    font-size: 14px;
+    font-size: 12px;
     color: #eeeeee;
-    line-height: 1.6;
-    margin: 0;
+    line-height: 1;
 }
 
 .column ul {
     list-style: none;
-    padding: 0;
 }
 
 .column ul li {
@@ -51,26 +51,26 @@
 
 .social {
     flex: 1;
-    min-width: 200px;
     margin-bottom: 30px;
+    min-width: 200px;
     text-align: center;
 }
 
 .social h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #ffffff;
 }
 
 .socialIcons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .socialIcons a {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 18px;
     transition: color 0.3s ease;
 }
 
@@ -80,6 +80,66 @@
 
 .copyright {
     text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 600px) {
+    .footer {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .column h3 {
+        font-size: 20px;
+    }
+
+    .column p,
+    .column ul,
+    .column ul li {
+        font-size: 14px;
+    }
+
+    .container {
+        row-gap: 10px;
+    }
+
+    .social h3 {
+        font-size: 20px;
+    }
+
+    .socialIcons {
+        gap: 20px;
+    }
+
+    .socialIcons a {
+        font-size: 24px;
+    }
+
+    .copyright {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 962px) {
+    .footer {
+        padding-top: 140px;
+        padding-bottom: 30px;
+    }
+
+    .socialIcons {
+        gap: 30px;
+    }
+
+    .copyright {
+        margin-top: 60px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .copyright {
+        margin-top: 100px;
+    }
 }

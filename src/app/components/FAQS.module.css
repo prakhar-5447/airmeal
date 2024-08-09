@@ -1,7 +1,8 @@
 .faqsSection {
     text-align: center;
-    height: 450px;
+    height: 500px;
     margin-top: 30px;
+    padding: 0px 30px;
 }
 
 .faqsSection h1 {
@@ -28,7 +29,7 @@
     color: #ffffff;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,13 +52,23 @@
 
 .accordionContent p {
     color: #a1a1a1;
-    font-size: 16px;
+    font-size: 12px;
     text-align: left;
 }
 
 .accordionContent.active {
     padding: 10px 20px;
-    max-height: 100px;
+    max-height: 130px;
     transition: max-height 0.5s ease-in, padding 0.5s ease-in;
     overflow-y: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+    .accordionButton {
+        font-size: 18px;
+    }
+
+    .accordionContent p {
+        font-size: 16px;
+    }
 }
